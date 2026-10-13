@@ -17,7 +17,7 @@ test('editor persists safely and RSVP works across restarts',async()=>{
  try{
   await start();
   assert.equal((await request('/health')).status,200);
-  for(const file of ['/royal.css','/palace.js','/assets/palace-v2.webp','/assets/couple-room.webp','/assets/door-atlas.webp'])assert.equal((await request(file)).status,200);
+  for(const file of ['/base.css?v=2.1.0','/royal.css?v=2.1.0','/palace.js?v=2.1.0','/assets/palace-v2.webp','/assets/couple-room.webp','/assets/door-atlas.webp'])assert.equal((await request(file)).status,200);
   assert.equal((await request('/api/admin/state')).status,401);
   assert.equal((await request('/api/login','POST',{password:'wrong-password'})).status,401);
   const login=await request('/api/login','POST',{password});assert.equal(login.status,200);
