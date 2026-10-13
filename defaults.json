@@ -30,7 +30,7 @@
     "groom": "/assets/groom.webp",
     "bride": "/assets/bride.webp",
     "romance": "/assets/romance.webp",
-    "palace": "/assets/palace.webp",
+    "palace": "/assets/palace-v2.webp",
     "door": "/assets/door.webp",
     "jasmine": "/assets/jasmine.webp"
   },
@@ -870,6 +870,8 @@
     "saved": "Konfirmasi dan doa Anda telah tersimpan. Terima kasih.",
     "saveFailed": "Konfirmasi belum terkirim. Silakan coba kembali.",
     "thankYou": "Terima kasih, {name}. Doa Anda telah ditambahkan.",
-    "formNote": "Konfirmasi dan doa Anda akan tersimpan untuk pengantin."
+    "formNote": "Konfirmasi dan doa Anda akan tersimpan untuk pengantin.",
+    "chamberCounter": "BILIK {number} / {total}",
+    "giftHeading": "INFORMASI TANDA TRESNA"
   }
 }

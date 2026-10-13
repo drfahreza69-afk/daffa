@@ -17,6 +17,7 @@ test('editor persists safely and RSVP works across restarts',async()=>{
  try{
   await start();
   assert.equal((await request('/health')).status,200);
+  for(const file of ['/royal.css','/palace.js','/assets/palace-v2.webp','/assets/couple-room.webp','/assets/door-atlas.webp'])assert.equal((await request(file)).status,200);
   assert.equal((await request('/api/admin/state')).status,401);
   assert.equal((await request('/api/login','POST',{password:'wrong-password'})).status,401);
   const login=await request('/api/login','POST',{password});assert.equal(login.status,200);
@@ -37,9 +38,13 @@ test('editor persists safely and RSVP works across restarts',async()=>{
   const csv=await request('/api/admin/rsvp.csv','GET',null,{Cookie:cookie});assert.equal(csv.status,200);assert((await csv.text()).includes('Tamu A'));
   const backup=await request('/api/admin/backup','GET',null,{Cookie:cookie});assert.equal(backup.status,200);assert.equal((await backup.json()).revision,1);
   assert.equal((await request('/api/logout','POST',{}, {Cookie:cookie,'X-CSRF-Token':admin.csrf})).status,200);
-  await stop();base=null;await start();
+  await stop();
+  const statePath=path.join(directory,'state.json'),old=JSON.parse(fs.readFileSync(statePath,'utf8'));
+  const defaults=JSON.parse(fs.readFileSync(path.join(root,'defaults.json'),'utf8')),missingKey=Object.keys(defaults.content).at(-1);
+  delete old.config.content[missingKey];delete old.config.messages.audioError;old.config.fields=[];old.config.assets.palace='/obsolete-palace.webp';
+  fs.writeFileSync(statePath,JSON.stringify(old));base=null;await start();
   guests=await (await request('/api/guestbook')).json();assert.equal(guests.entries.length,2);
-  const relogin=await request('/api/login','POST',{password});const cookie2=relogin.headers.get('set-cookie').split(';')[0];admin=await (await request('/api/admin/state','GET',null,{Cookie:cookie2})).json();assert.equal(admin.config.content[nameKey],config.content[nameKey]);assert.equal(admin.config.stories[0].text,'Cerita baru tersimpan.');assert.equal(admin.revision,1);
+  const relogin=await request('/api/login','POST',{password});const cookie2=relogin.headers.get('set-cookie').split(';')[0];admin=await (await request('/api/admin/state','GET',null,{Cookie:cookie2})).json();assert.equal(admin.config.content[nameKey],config.content[nameKey]);assert.equal(admin.config.stories[0].text,'Cerita baru tersimpan.');assert.equal(admin.revision,1);assert.equal(admin.config.content[missingKey],defaults.content[missingKey]);assert.equal(admin.config.messages.audioError,defaults.messages.audioError);assert.equal(admin.config.assets.palace,defaults.assets.palace);assert(admin.config.fields.length>80);
   const cross=await fetch(base+'/api/rsvp',{method:'POST',headers:{Origin:'https://untrusted.example','Content-Type':'application/json'},body:JSON.stringify({name:'Tamu',attendance:'Hadir',guests:1,wish:''})});assert.equal(cross.status,403);
  }finally{await stop();fs.rmSync(directory,{recursive:true,force:true});}
 });

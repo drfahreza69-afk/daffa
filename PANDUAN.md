@@ -1,17 +1,27 @@
-# Undangan Briand & Tiara dengan editor teks
+# Royal Palace v2: Undangan Briand & Tiara dengan editor teks
 
 Paket ini berisi undangan, gambar, audio asli, halaman admin, dan penyimpanan RSVP bersama. Halaman tamu ada di `/`. Halaman editor ada di `/admin`.
 
 ## Pasang melalui GitHub dan Railway
 
-1. Ekstrak ZIP. Unggah **isi folder** `briand-tiara-railway` ke akar repository GitHub. Pastikan `package.json`, `Dockerfile`, `server.mjs`, `defaults.json`, dan folder `public` langsung terlihat di akar repository.
+1. Ekstrak ZIP. Unggah **isi folder** `briand-tiara-royal-palace` ke akar repository GitHub. Pastikan `package.json`, `Dockerfile`, `server.mjs`, `defaults.json`, dan folder `public` langsung terlihat di akar repository.
 2. Di Railway, buat proyek dan pilih **Deploy from GitHub repo**. Pilih repository tersebut. Dockerfile sudah menyiapkan proses menjalankan aplikasi.
 3. Di bagian **Variables**, tambahkan `ADMIN_PASSWORD` dengan kata sandi pribadi minimal 10 karakter. Jangan menaruh kata sandi nyata di GitHub.
 4. Tambahkan **Volume** pada service undangan dengan **Mount Path `/data`**. Railway menyediakan `RAILWAY_VOLUME_MOUNT_PATH`; aplikasi memakainya untuk menyimpan perubahan dan RSVP. Jika Anda menetapkan `DATA_DIR`, pastikan nilainya menunjuk mount path yang sama.
 5. Di **Settings → Networking**, pilih **Generate Domain**. Gunakan port yang diberikan Railway melalui variabel `PORT`; aplikasi sudah mendengarkan pada `0.0.0.0`.
 6. Buka domain tersebut untuk melihat undangan. Tambahkan `/admin` pada domain untuk masuk ke editor.
 
-Sumber resmi: https://docs.railway.com/quick-start dan https://docs.railway.com/volumes/reference
+Sumber resmi: https://docs.railway.com/quick-start, https://docs.railway.com/builds/dockerfiles, dan https://docs.railway.com/volumes.
+
+## Memperbarui website sebelumnya
+
+Unduh cadangan melalui `/admin` sebelum memperbarui. Ganti berkas proyek lama di repository dengan seluruh isi folder versi ini. Pertahankan service Railway, Volume `/data`, `ADMIN_PASSWORD`, dan `DATA_DIR` yang sudah digunakan. Jangan menghapus Volume saat mengganti desain. Server mengambil kembali teks dan RSVP dari `state.json` pada Volume, lalu melengkapi konfigurasi tampilan versi terbaru.
+
+## Tampilan dan animasi
+
+Ada sembilan tampilan: gerbang pembuka, tujuh bilik utama, dan epilog. Navigasi memakai tombol bilik, tombol maju/mundur, keyboard panah, atau gestur horizontal. Halaman yang isinya panjang tetap dapat digulir di ponsel agar formulir dan teks dapat dibaca utuh.
+
+Lingkungan arsitektur memakai gambar yang sudah dirender. Dua daun pintu memiliki geometri 3D WebGL, ketebalan, engsel, pencahayaan, rotasi 118 derajat, dan gerak kamera. Browser yang tidak mendukung WebGL memakai animasi pintu CSS. Tombol lewati mempercepat masuk tanpa menunggu animasi. Pengaturan perangkat untuk mengurangi gerak juga didukung.
 
 ## Mengubah teks
 
@@ -52,7 +62,9 @@ Buka `http://localhost:3000`. Tidak ada dependency yang perlu diinstal. Server t
 
 ## Media
 
-Gambar berada di `public/assets/`. Rekaman asli ada di `public/assets/music.mp3`; byte audio tidak diubah, hanya nama berkas yang disederhanakan. Ilustrasi pengantin tetap memakai bahan yang diberikan. Visual pendopo dan gebyok merupakan ilustrasi konsep.
+Gambar berada di `public/assets/`. Rekaman asli ada di `public/assets/music.mp3`; byte audio tidak diubah, hanya nama berkas yang disederhanakan. Ilustrasi pengantin tetap memakai bahan yang diberikan. Visual pendopo dan gebyok merupakan ilustrasi konsep. Dua lingkungan baru tidak memuat teks tertanam; nama, tanggal, judul, dan tombol memakai HTML yang dapat diedit.
+
+Audio dimulai setelah tamu menekan tombol buka atau tombol musik. Tombol musik di kanan atas menjeda dan melanjutkan rekaman. Volume rekaman awal adalah 24%; dapat diubah di `public/app.js` pada `media.volume=.24*progress` (rentang `0` sampai `1`). Rekaman ini berdurasi sekitar 25 detik dan diputar berulang sesuai bahan yang diberikan.
 
 ## Pemeriksaan
 

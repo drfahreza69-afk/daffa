@@ -15,7 +15,7 @@ const secret=crypto.createHash('sha256').update(process.env.SESSION_SECRET||PASS
 const template=fs.readFileSync(path.join(PUBLIC,'index.html'),'utf8');
 const limits=new Map();
 const clone=value=>JSON.parse(JSON.stringify(value));
-function readState(){if(!fs.existsSync(STATE))return {revision:0,config:clone(defaults),entries:[]};return JSON.parse(fs.readFileSync(STATE,'utf8'));}
+function readState(){if(!fs.existsSync(STATE))return {revision:0,config:clone(defaults),entries:[]};const saved=JSON.parse(fs.readFileSync(STATE,'utf8'));saved.config={...clone(defaults),...saved.config,content:{...defaults.content,...saved.config.content},messages:{...defaults.messages,...saved.config.messages},assets:clone(defaults.assets),bindings:clone(defaults.bindings),fields:clone(defaults.fields)};return saved;}
 function writeState(state){const temp=STATE+'.'+crypto.randomBytes(5).toString('hex')+'.tmp';fs.writeFileSync(temp,JSON.stringify(state,null,2),{mode:0o600});fs.renameSync(temp,STATE);}
 function safeJSON(value){return JSON.stringify(value).replace(/</g,'\\u003c').replace(/>/g,'\\u003e').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');}
 function send(res,status,data,headers={}){res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store',...headers});res.end(JSON.stringify(data));}
