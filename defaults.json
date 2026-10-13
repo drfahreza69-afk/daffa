@@ -1,0 +1,875 @@
+{
+  "couple": {
+    "groom": "Briand Dananjaya, S.T.",
+    "bride": "Tiara Sekar Ayu, B.A."
+  },
+  "date": "2026-12-12T08:00:00+07:00",
+  "events": [
+    {
+      "title": "Akad Nikah Briand & Tiara",
+      "place": "Pendopo Ageng Handrawina, Yogyakarta",
+      "start": "20261212T010000Z",
+      "end": "20261212T030000Z",
+      "mapUrl": ""
+    },
+    {
+      "title": "Resepsi Briand & Tiara",
+      "place": "Grand Ballroom Sasana Kencana, Yogyakarta",
+      "start": "20261212T043000Z",
+      "end": "20261212T080000Z",
+      "mapUrl": ""
+    }
+  ],
+  "bank": {
+    "name": "",
+    "number": "",
+    "holder": ""
+  },
+  "audioSrc": "/assets/music.mp3",
+  "assets": {
+    "groom": "/assets/groom.webp",
+    "bride": "/assets/bride.webp",
+    "romance": "/assets/romance.webp",
+    "palace": "/assets/palace.webp",
+    "door": "/assets/door.webp",
+    "jasmine": "/assets/jasmine.webp"
+  },
+  "stories": [
+    {
+      "year": "2021",
+      "name": "Mula Pepanggihan",
+      "text": "Pertemuan pertama di pelataran budaya menjadi awal perjalanan kami."
+    },
+    {
+      "year": "2023",
+      "name": "Rumaketing Ati",
+      "text": "Kami membangun komitmen dan menemukan keselarasan rasa."
+    },
+    {
+      "year": "2025",
+      "name": "Pinangan Kencana",
+      "text": "Pertemuan resmi keluarga besar dan lamaran adat menjadi langkah menuju pernikahan."
+    },
+    {
+      "year": "2026",
+      "name": "Janji Suci Pawiwahan",
+      "text": "Dengan doa dan restu keluarga, kami menuju ikrar suci pernikahan."
+    }
+  ],
+  "storageKey": "bt-royal-rsvp-v1",
+  "content": {
+    "text_001": "Briand dan Tiara",
+    "text_002": "B&T",
+    "text_003": "Aktifkan musik",
+    "text_004": "♪",
+    "text_005": "Buka menu",
+    "text_006": "☰",
+    "text_007": "Gerbang undangan",
+    "text_008": "Briand",
+    "text_009": "Tiara",
+    "text_010": "&",
+    "text_011": "Sabtu, 12 Desember 2026",
+    "text_012": "Buka Undangan",
+    "text_013": "→",
+    "text_014": "Lewati animasi →",
+    "text_015": "Assalamu’alaikum warahmatullahi wabarakatuh.",
+    "text_016": "Dengan memohon rahmat dan rida Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada pernikahan kami.",
+    "text_017": "Buka Kisah Kami →",
+    "text_018": "Ilustrasi simbolis pasangan dalam cahaya hangat",
+    "text_019": "Dalam kasih-Nya.",
+    "text_020": "وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ",
+    "text_021": "“Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.”",
+    "text_022": "QS. AR-RUM: 21",
+    "text_023": "Mempelai",
+    "text_024": "Ilustrasi Briand memegang buket bunga merah muda",
+    "text_025": "Briand Dananjaya, S.T.",
+    "text_026": "Putra Bpk. Ir. Hartono",
+    "text_027": "dan Ibu Hj. Retno Wardani",
+    "text_028": "Ilustrasi Tiara berhijab putih memegang buket bunga",
+    "text_029": "Tiara Sekar Ayu, B.A.",
+    "text_030": "Putri Bpk. Drs. Bambang Soediro",
+    "text_031": "dan Ibu Hj. Ratna Purnamasari",
+    "text_032": "Cerita Kami",
+    "text_033": "Ilustrasi simbolis perjalanan pasangan",
+    "text_034": "Pilih tahun perjalanan",
+    "text_035": "2021",
+    "text_036": "2023",
+    "text_037": "2025",
+    "text_038": "2026",
+    "text_039": "Mula Pepanggihan",
+    "text_040": "Pertemuan pertama di pelataran budaya menjadi awal perjalanan kami.",
+    "text_041": "12 Desember 2026",
+    "text_042": "Sabtu · Yogyakarta",
+    "text_043": "Hitung mundur menuju akad nikah",
+    "text_044": "00",
+    "text_045": "Hari",
+    "text_046": "Jam",
+    "text_047": "Menit",
+    "text_048": "Detik",
+    "text_049": "Akad Nikah",
+    "text_050": "08.00–10.00 WIB",
+    "text_051": "Pendopo Ageng Handrawina",
+    "text_052": "Yogyakarta",
+    "text_053": "Cari Lokasi ↗",
+    "text_054": "Resepsi Adat",
+    "text_055": "11.30–15.00 WIB",
+    "text_056": "Grand Ballroom Sasana Kencana",
+    "text_057": "Simpan Jadwal",
+    "text_058": "Menuju akad nikah · WIB",
+    "text_059": "Briand & Tiara",
+    "text_060": "Perbesar ilustrasi Briand",
+    "text_061": "Ilustrasi Briand",
+    "text_062": "Perbesar ilustrasi pasangan",
+    "text_063": "Ilustrasi simbolis pasangan dari belakang",
+    "text_064": "Kisah Kami",
+    "text_065": "Perbesar ilustrasi Tiara",
+    "text_066": "Ilustrasi Tiara berhijab putih",
+    "text_067": "Kehadiran & Doa",
+    "text_068": "Ilustrasi simbolis pasangan",
+    "text_069": "Nama lengkap",
+    "text_070": "Nama Anda",
+    "text_071": "Kehadiran",
+    "text_072": "Hadir",
+    "text_073": "Ragu",
+    "text_074": "Tidak Hadir",
+    "text_075": "Jumlah tamu",
+    "text_076": "Ucapan & doa",
+    "text_077": "Doa Anda untuk Briand & Tiara",
+    "text_078": "Simpan Konfirmasi →",
+    "text_079": "Konfirmasi tersimpan di perangkat ini dan belum dikirim kepada pengantin.",
+    "text_080": "Buka tanda tresna",
+    "text_081": "Salin Rekening",
+    "text_082": "Buku Doa",
+    "text_083": "(0)",
+    "text_084": "Jadilah yang pertama menuliskan doa.",
+    "text_085": "Matur Nuwun →",
+    "text_086": "Matur Nuwun.",
+    "text_087": "Terima kasih atas doa,",
+    "text_088": "kehadiran, dan restu Anda.",
+    "text_089": "Kembali ke Gerbang",
+    "text_090": "Navigasi undangan",
+    "text_091": "Bagian sebelumnya",
+    "text_092": "←",
+    "text_093": "Bagian berikutnya",
+    "text_094": "Tutup menu",
+    "text_095": "×",
+    "text_096": "Galeri",
+    "text_097": "Tutup galeri",
+    "text_098": "Gambar sebelumnya",
+    "text_099": "Gambar berikutnya"
+  },
+  "bindings": [
+    {
+      "selector": "[data-bind_0]",
+      "attribute": "aria-label",
+      "key": "text_001"
+    },
+    {
+      "selector": "[data-bind_1]",
+      "attribute": "aria-label",
+      "key": "text_003"
+    },
+    {
+      "selector": "[data-bind_2]",
+      "attribute": "aria-label",
+      "key": "text_005"
+    },
+    {
+      "selector": "[data-bind_3]",
+      "attribute": "aria-label",
+      "key": "text_007"
+    },
+    {
+      "selector": "[data-bind_4]",
+      "attribute": "alt",
+      "key": "text_018"
+    },
+    {
+      "selector": "[data-bind_5]",
+      "attribute": "alt",
+      "key": "text_024"
+    },
+    {
+      "selector": "[data-bind_6]",
+      "attribute": "alt",
+      "key": "text_028"
+    },
+    {
+      "selector": "[data-bind_7]",
+      "attribute": "alt",
+      "key": "text_033"
+    },
+    {
+      "selector": "[data-bind_8]",
+      "attribute": "aria-label",
+      "key": "text_034"
+    },
+    {
+      "selector": "[data-bind_9]",
+      "attribute": "aria-label",
+      "key": "text_043"
+    },
+    {
+      "selector": "[data-bind_10]",
+      "attribute": "aria-label",
+      "key": "text_060"
+    },
+    {
+      "selector": "[data-bind_11]",
+      "attribute": "alt",
+      "key": "text_061"
+    },
+    {
+      "selector": "[data-bind_12]",
+      "attribute": "aria-label",
+      "key": "text_062"
+    },
+    {
+      "selector": "[data-bind_13]",
+      "attribute": "alt",
+      "key": "text_063"
+    },
+    {
+      "selector": "[data-bind_14]",
+      "attribute": "aria-label",
+      "key": "text_065"
+    },
+    {
+      "selector": "[data-bind_15]",
+      "attribute": "alt",
+      "key": "text_066"
+    },
+    {
+      "selector": "[data-bind_16]",
+      "attribute": "alt",
+      "key": "text_068"
+    },
+    {
+      "selector": "[data-bind_17]",
+      "attribute": "placeholder",
+      "key": "text_070"
+    },
+    {
+      "selector": "[data-bind_18]",
+      "attribute": "placeholder",
+      "key": "text_077"
+    },
+    {
+      "selector": "[data-bind_19]",
+      "attribute": "aria-label",
+      "key": "text_080"
+    },
+    {
+      "selector": "[data-bind_20]",
+      "attribute": "aria-label",
+      "key": "text_090"
+    },
+    {
+      "selector": "[data-bind_21]",
+      "attribute": "aria-label",
+      "key": "text_091"
+    },
+    {
+      "selector": "[data-bind_22]",
+      "attribute": "aria-label",
+      "key": "text_093"
+    },
+    {
+      "selector": "[data-bind_23]",
+      "attribute": "aria-label",
+      "key": "text_094"
+    },
+    {
+      "selector": "[data-bind_24]",
+      "attribute": "aria-label",
+      "key": "text_097"
+    },
+    {
+      "selector": "[data-bind_25]",
+      "attribute": "aria-label",
+      "key": "text_098"
+    },
+    {
+      "selector": "[data-bind_26]",
+      "attribute": "aria-label",
+      "key": "text_099"
+    }
+  ],
+  "fields": [
+    {
+      "key": "text_001",
+      "group": "Tombol dan keterangan",
+      "label": "Briand dan Tiara",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_002",
+      "group": "Tombol dan keterangan",
+      "label": "B&T",
+      "kind": "text"
+    },
+    {
+      "key": "text_005",
+      "group": "Tombol dan keterangan",
+      "label": "Buka menu",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_006",
+      "group": "Tombol dan keterangan",
+      "label": "☰",
+      "kind": "text"
+    },
+    {
+      "key": "text_007",
+      "group": "Gerbang",
+      "label": "Gerbang undangan",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_008",
+      "group": "Gerbang",
+      "label": "Briand",
+      "kind": "text"
+    },
+    {
+      "key": "text_009",
+      "group": "Gerbang",
+      "label": "Tiara",
+      "kind": "text"
+    },
+    {
+      "key": "text_010",
+      "group": "Gerbang",
+      "label": "&",
+      "kind": "text"
+    },
+    {
+      "key": "text_011",
+      "group": "Gerbang",
+      "label": "Sabtu, 12 Desember 2026",
+      "kind": "text"
+    },
+    {
+      "key": "text_012",
+      "group": "Gerbang",
+      "label": "Buka Undangan",
+      "kind": "text"
+    },
+    {
+      "key": "text_013",
+      "group": "Gerbang",
+      "label": "→",
+      "kind": "text"
+    },
+    {
+      "key": "text_014",
+      "group": "Gerbang",
+      "label": "Lewati animasi →",
+      "kind": "text"
+    },
+    {
+      "key": "text_015",
+      "group": "Pembuka",
+      "label": "Assalamu’alaikum warahmatullahi wabarakatuh.",
+      "kind": "text"
+    },
+    {
+      "key": "text_016",
+      "group": "Pembuka",
+      "label": "Dengan memohon rahmat dan rida Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir ",
+      "kind": "text"
+    },
+    {
+      "key": "text_017",
+      "group": "Pembuka",
+      "label": "Buka Kisah Kami →",
+      "kind": "text"
+    },
+    {
+      "key": "text_018",
+      "group": "Pembuka",
+      "label": "Ilustrasi simbolis pasangan dalam cahaya hangat",
+      "kind": "alt"
+    },
+    {
+      "key": "text_019",
+      "group": "Doa",
+      "label": "Dalam kasih-Nya.",
+      "kind": "text"
+    },
+    {
+      "key": "text_020",
+      "group": "Doa",
+      "label": "وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَ",
+      "kind": "text"
+    },
+    {
+      "key": "text_021",
+      "group": "Doa",
+      "label": "“Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untuk",
+      "kind": "text"
+    },
+    {
+      "key": "text_022",
+      "group": "Doa",
+      "label": "QS. AR-RUM: 21",
+      "kind": "text"
+    },
+    {
+      "key": "text_023",
+      "group": "Mempelai",
+      "label": "Mempelai",
+      "kind": "text"
+    },
+    {
+      "key": "text_024",
+      "group": "Mempelai",
+      "label": "Ilustrasi Briand memegang buket bunga merah muda",
+      "kind": "alt"
+    },
+    {
+      "key": "text_025",
+      "group": "Mempelai",
+      "label": "Briand Dananjaya, S.T.",
+      "kind": "text"
+    },
+    {
+      "key": "text_026",
+      "group": "Mempelai",
+      "label": "Putra Bpk. Ir. Hartono",
+      "kind": "text"
+    },
+    {
+      "key": "text_027",
+      "group": "Mempelai",
+      "label": "dan Ibu Hj. Retno Wardani",
+      "kind": "text"
+    },
+    {
+      "key": "text_028",
+      "group": "Mempelai",
+      "label": "Ilustrasi Tiara berhijab putih memegang buket bunga",
+      "kind": "alt"
+    },
+    {
+      "key": "text_029",
+      "group": "Mempelai",
+      "label": "Tiara Sekar Ayu, B.A.",
+      "kind": "text"
+    },
+    {
+      "key": "text_030",
+      "group": "Mempelai",
+      "label": "Putri Bpk. Drs. Bambang Soediro",
+      "kind": "text"
+    },
+    {
+      "key": "text_031",
+      "group": "Mempelai",
+      "label": "dan Ibu Hj. Ratna Purnamasari",
+      "kind": "text"
+    },
+    {
+      "key": "text_032",
+      "group": "Cerita",
+      "label": "Cerita Kami",
+      "kind": "text"
+    },
+    {
+      "key": "text_033",
+      "group": "Cerita",
+      "label": "Ilustrasi simbolis perjalanan pasangan",
+      "kind": "alt"
+    },
+    {
+      "key": "text_034",
+      "group": "Cerita",
+      "label": "Pilih tahun perjalanan",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_041",
+      "group": "Acara",
+      "label": "12 Desember 2026",
+      "kind": "text"
+    },
+    {
+      "key": "text_042",
+      "group": "Acara",
+      "label": "Sabtu · Yogyakarta",
+      "kind": "text"
+    },
+    {
+      "key": "text_043",
+      "group": "Acara",
+      "label": "Hitung mundur menuju akad nikah",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_044",
+      "group": "Acara",
+      "label": "00",
+      "kind": "text"
+    },
+    {
+      "key": "text_045",
+      "group": "Acara",
+      "label": "Hari",
+      "kind": "text"
+    },
+    {
+      "key": "text_046",
+      "group": "Acara",
+      "label": "Jam",
+      "kind": "text"
+    },
+    {
+      "key": "text_047",
+      "group": "Acara",
+      "label": "Menit",
+      "kind": "text"
+    },
+    {
+      "key": "text_048",
+      "group": "Acara",
+      "label": "Detik",
+      "kind": "text"
+    },
+    {
+      "key": "text_049",
+      "group": "Acara",
+      "label": "Akad Nikah",
+      "kind": "text"
+    },
+    {
+      "key": "text_050",
+      "group": "Acara",
+      "label": "08.00–10.00 WIB",
+      "kind": "text"
+    },
+    {
+      "key": "text_051",
+      "group": "Acara",
+      "label": "Pendopo Ageng Handrawina",
+      "kind": "text"
+    },
+    {
+      "key": "text_052",
+      "group": "Acara",
+      "label": "Yogyakarta",
+      "kind": "text"
+    },
+    {
+      "key": "text_053",
+      "group": "Acara",
+      "label": "Cari Lokasi ↗",
+      "kind": "text"
+    },
+    {
+      "key": "text_054",
+      "group": "Acara",
+      "label": "Resepsi Adat",
+      "kind": "text"
+    },
+    {
+      "key": "text_055",
+      "group": "Acara",
+      "label": "11.30–15.00 WIB",
+      "kind": "text"
+    },
+    {
+      "key": "text_056",
+      "group": "Acara",
+      "label": "Grand Ballroom Sasana Kencana",
+      "kind": "text"
+    },
+    {
+      "key": "text_057",
+      "group": "Acara",
+      "label": "Simpan Jadwal",
+      "kind": "text"
+    },
+    {
+      "key": "text_058",
+      "group": "Acara",
+      "label": "Menuju akad nikah · WIB",
+      "kind": "text"
+    },
+    {
+      "key": "text_059",
+      "group": "Galeri",
+      "label": "Briand & Tiara",
+      "kind": "text"
+    },
+    {
+      "key": "text_060",
+      "group": "Galeri",
+      "label": "Perbesar ilustrasi Briand",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_061",
+      "group": "Galeri",
+      "label": "Ilustrasi Briand",
+      "kind": "alt"
+    },
+    {
+      "key": "text_062",
+      "group": "Galeri",
+      "label": "Perbesar ilustrasi pasangan",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_063",
+      "group": "Galeri",
+      "label": "Ilustrasi simbolis pasangan dari belakang",
+      "kind": "alt"
+    },
+    {
+      "key": "text_064",
+      "group": "Galeri",
+      "label": "Kisah Kami",
+      "kind": "text"
+    },
+    {
+      "key": "text_065",
+      "group": "Galeri",
+      "label": "Perbesar ilustrasi Tiara",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_066",
+      "group": "Galeri",
+      "label": "Ilustrasi Tiara berhijab putih",
+      "kind": "alt"
+    },
+    {
+      "key": "text_067",
+      "group": "RSVP",
+      "label": "Kehadiran & Doa",
+      "kind": "text"
+    },
+    {
+      "key": "text_068",
+      "group": "RSVP",
+      "label": "Ilustrasi simbolis pasangan",
+      "kind": "alt"
+    },
+    {
+      "key": "text_069",
+      "group": "RSVP",
+      "label": "Nama lengkap",
+      "kind": "text"
+    },
+    {
+      "key": "text_070",
+      "group": "RSVP",
+      "label": "Nama Anda",
+      "kind": "placeholder"
+    },
+    {
+      "key": "text_071",
+      "group": "RSVP",
+      "label": "Kehadiran",
+      "kind": "text"
+    },
+    {
+      "key": "text_072",
+      "group": "RSVP",
+      "label": "Hadir",
+      "kind": "text"
+    },
+    {
+      "key": "text_073",
+      "group": "RSVP",
+      "label": "Ragu",
+      "kind": "text"
+    },
+    {
+      "key": "text_074",
+      "group": "RSVP",
+      "label": "Tidak Hadir",
+      "kind": "text"
+    },
+    {
+      "key": "text_075",
+      "group": "RSVP",
+      "label": "Jumlah tamu",
+      "kind": "text"
+    },
+    {
+      "key": "text_076",
+      "group": "RSVP",
+      "label": "Ucapan & doa",
+      "kind": "text"
+    },
+    {
+      "key": "text_077",
+      "group": "RSVP",
+      "label": "Doa Anda untuk Briand & Tiara",
+      "kind": "placeholder"
+    },
+    {
+      "key": "text_078",
+      "group": "RSVP",
+      "label": "Simpan Konfirmasi →",
+      "kind": "text"
+    },
+    {
+      "key": "text_080",
+      "group": "RSVP",
+      "label": "Buka tanda tresna",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_081",
+      "group": "RSVP",
+      "label": "Salin Rekening",
+      "kind": "text"
+    },
+    {
+      "key": "text_082",
+      "group": "RSVP",
+      "label": "Buku Doa",
+      "kind": "text"
+    },
+    {
+      "key": "text_083",
+      "group": "RSVP",
+      "label": "(0)",
+      "kind": "text"
+    },
+    {
+      "key": "text_085",
+      "group": "RSVP",
+      "label": "Matur Nuwun →",
+      "kind": "text"
+    },
+    {
+      "key": "text_086",
+      "group": "Penutup",
+      "label": "Matur Nuwun.",
+      "kind": "text"
+    },
+    {
+      "key": "text_087",
+      "group": "Penutup",
+      "label": "Terima kasih atas doa,",
+      "kind": "text"
+    },
+    {
+      "key": "text_088",
+      "group": "Penutup",
+      "label": "kehadiran, dan restu Anda.",
+      "kind": "text"
+    },
+    {
+      "key": "text_089",
+      "group": "Penutup",
+      "label": "Kembali ke Gerbang",
+      "kind": "text"
+    },
+    {
+      "key": "text_090",
+      "group": "Tombol dan keterangan",
+      "label": "Navigasi undangan",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_091",
+      "group": "Tombol dan keterangan",
+      "label": "Bagian sebelumnya",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_092",
+      "group": "Tombol dan keterangan",
+      "label": "←",
+      "kind": "text"
+    },
+    {
+      "key": "text_093",
+      "group": "Tombol dan keterangan",
+      "label": "Bagian berikutnya",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_094",
+      "group": "Tombol dan keterangan",
+      "label": "Tutup menu",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_095",
+      "group": "Tombol dan keterangan",
+      "label": "×",
+      "kind": "text"
+    },
+    {
+      "key": "text_096",
+      "group": "Tombol dan keterangan",
+      "label": "Galeri",
+      "kind": "text"
+    },
+    {
+      "key": "text_097",
+      "group": "Tombol dan keterangan",
+      "label": "Tutup galeri",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_098",
+      "group": "Tombol dan keterangan",
+      "label": "Gambar sebelumnya",
+      "kind": "aria-label"
+    },
+    {
+      "key": "text_099",
+      "group": "Tombol dan keterangan",
+      "label": "Gambar berikutnya",
+      "kind": "aria-label"
+    }
+  ],
+  "navigation": [
+    "Undangan",
+    "Doa",
+    "Mempelai",
+    "Cerita",
+    "Acara",
+    "Galeri",
+    "RSVP",
+    "Penutup"
+  ],
+  "galleryTitles": [
+    "Briand",
+    "Kisah Kami",
+    "Tiara"
+  ],
+  "messages": {
+    "pageTitle": "Undangan Pernikahan Briand & Tiara",
+    "openError": "Silakan buka kembali undangan.",
+    "audioOnLabel": "Matikan musik",
+    "audioOffLabel": "Aktifkan musik",
+    "audioOnIcon": "♫",
+    "audioOffIcon": "♪",
+    "audioError": "Audio belum dapat diputar. Undangan tetap dapat digunakan.",
+    "countdownFinished": "Hari pernikahan telah tiba",
+    "calendarReady": "Jadwal kalender disiapkan.",
+    "calendarError": "Unduhan kalender dibatasi oleh peramban.",
+    "copySuccess": "Nomor rekening berhasil disalin.",
+    "copyFallback": "Salin manual: {number}",
+    "bankPending": "Detail rekening akan kami lengkapi.",
+    "guestEmpty": "Jadilah yang pertama menuliskan doa.",
+    "guestDefaultWish": "Mengirimkan doa untuk kedua mempelai.",
+    "guestCountSuffix": "tamu",
+    "attendancePresent": "Hadir",
+    "attendanceUnsure": "Ragu",
+    "attendanceAbsent": "Tidak Hadir",
+    "validationError": "Lengkapi nama dan jumlah tamu yang valid.",
+    "saved": "Konfirmasi dan doa Anda telah tersimpan. Terima kasih.",
+    "saveFailed": "Konfirmasi belum terkirim. Silakan coba kembali.",
+    "thankYou": "Terima kasih, {name}. Doa Anda telah ditambahkan.",
+    "formNote": "Konfirmasi dan doa Anda akan tersimpan untuk pengantin."
+  }
+}
