@@ -872,6 +872,8 @@
     "thankYou": "Terima kasih, {name}. Doa Anda telah ditambahkan.",
     "formNote": "Konfirmasi dan doa Anda akan tersimpan untuk pengantin.",
     "chamberCounter": "BILIK {number} / {total}",
-    "giftHeading": "INFORMASI TANDA TRESNA"
+    "giftHeading": "INFORMASI TANDA TRESNA",
+    "homeLabel": "Gerbang Awal",
+    "homeAriaLabel": "Kembali ke gerbang awal"
   }
 }

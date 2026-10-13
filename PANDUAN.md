@@ -1,4 +1,4 @@
-# Royal Palace v2.1: Undangan Briand & Tiara dengan editor teks
+# Royal Palace v2.2: Undangan Briand & Tiara dengan editor teks
 
 Paket ini berisi undangan, gambar, audio asli, halaman admin, dan penyimpanan RSVP bersama. Halaman tamu ada di `/`. Halaman editor ada di `/admin`.
 
@@ -12,6 +12,14 @@ Paket ini berisi undangan, gambar, audio asli, halaman admin, dan penyimpanan RS
 6. Buka domain tersebut untuk melihat undangan. Tambahkan `/admin` pada domain untuk masuk ke editor.
 
 Sumber resmi: https://docs.railway.com/quick-start, https://docs.railway.com/builds/dockerfiles, dan https://docs.railway.com/volumes.
+
+## Perbaikan v2.2
+
+Untuk kembali ke halaman pembuka, tekan **Gerbang Awal** pada header tetap di bagian atas. Tombol juga ada di menu. Menekan monogram B&T menutup kembali gerbang. Pada bilik pertama, tombol sebelumnya juga mengarah ke gerbang. Tombol pada epilog tetap tersedia. Setelah kamera kembali dan pintu tertutup, tombol Buka Undangan aktif kembali tanpa memuat ulang halaman.
+
+Urutan buka dan tutup memiliki status tersendiri dan timer yang dibatalkan saat berganti arah. Kembali ketika animasi pembukaan belum selesai tidak memunculkan bilik secara terlambat. Kembali dari menu menutup dialog terlebih dahulu. Rekaman tidak dibuat ulang setiap kali pintu dibuka.
+
+Sisi belakang daun pintu kini memakai tekstur ukiran emas terpisah, bingkai prada, relief flora, roset, dan engsel kuningan. Cincin serta aksen sudut memakai geometri 3D. Browser yang memakai fallback CSS tetap menampilkan sisi belakang berornamen.
 
 ## Perbaikan v2.1
 
@@ -74,7 +82,7 @@ Audio dimulai setelah tamu menekan tombol buka atau tombol musik. Tombol musik d
 
 ## Pemeriksaan
 
-Jalankan `npm test`. Delapan pengujian otomatis mencakup urutan stylesheet, kesesuaian posisi pintu pada tujuh rasio layar, resize fallback saat WebGL dibatasi, login, penyimpanan teks, konflik versi, penanganan konten berbahaya, RSVP, pemutaran media melalui HTTP range, ekspor, dan keberlanjutan data setelah server dimulai ulang.
+Jalankan `npm test`. Sebelas pengujian otomatis mencakup urutan stylesheet, kesesuaian posisi pintu pada tujuh rasio layar, resize fallback saat WebGL dibatasi, kembali dari setiap bilik, pembatalan animasi, buka-tutup berulang, geometri aksesori belakang, login, penyimpanan teks, konflik versi, penanganan konten berbahaya, RSVP, pemutaran media melalui HTTP range, ekspor, dan keberlanjutan data setelah server dimulai ulang.
 
 
 Pengujian posisi menggunakan perhitungan koordinat, bukan screenshot browser. Shader pintu juga sudah lolos kompilasi dan penautan pada konteks GLES lokal. Tampilan akhir pada browser dan deployment Railway belum diuji langsung di lingkungan ini.

@@ -22,3 +22,29 @@ test('admin renders editors, applies changes, and saves draft',async()=>{
  const fields=e.$('fields').querySelectorAll('textarea,input');assert(fields.length>100);
  fields[0].value='Monogram Baru';fields[0].emit('input');e.$('save').emit('click');await settle();await settle();assert.equal(e.getSavedConfig().content[config.fields[0].key],'Monogram Baru');assert.equal(e.$('status').textContent,'Perubahan tersimpan.');assert(e.$('preview').src.startsWith('/?preview='));
 });
+
+
+test('every chamber returns to the closed gate and can reopen without reloading or duplicating audio',async()=>{
+ const config=JSON.parse(read('defaults.json'));config.messages.homeLabel='Pintu Utama';
+ const e=harness.create(JSON.parse(read('tests/invitation-dom.json')),read('public/palace.js')+'\n'+read('public/app.js'),config);
+ assert.equal(e.$('bt-home-label').textContent,'Pintu Utama');
+ for(let i=0;i<8;i++){
+  e.api.openGate();e.$('bt-skip').emit('click');e.flush();await settle();e.api.go(i);
+  assert.equal(e.$('bt-home').hidden,false);e.$('bt-home').emit('click');assert.equal(e.api.getState().gateMode,'closing');e.flush();
+  assert.equal(e.api.getState().gateMode,'closed');assert.equal(e.$('bt-cover').hidden,false);assert.equal(e.$('bt-main').hidden,true);assert.equal(e.$('bt-footer').hidden,true);assert.equal(e.$('bt-open').disabled,false);
+  assert(!e.root.className.includes('bt-opening'));assert(!e.root.className.includes('bt-traversing'));
+ }
+ assert.equal(e.mediaInstances.length,1);
+});
+
+test('return cancels an unfinished opening and works from the menu, epilogue, and first previous button',async()=>{
+ const config=JSON.parse(read('defaults.json'));const e=harness.create(JSON.parse(read('tests/invitation-dom.json')),read('public/palace.js')+'\n'+read('public/app.js'),config);
+ e.api.openGate();assert.equal(e.api.getState().gateMode,'opening');e.$('bt-brand-home').emit('click');e.api.finishOpen();assert.equal(e.api.getState().gateMode,'closing');e.flush();assert.equal(e.api.getState().gateMode,'closed');assert.equal(e.$('bt-cover').hidden,false);
+ for(const route of ['menu','epilogue','previous']){
+  e.api.openGate();e.$('bt-skip').emit('click');e.flush();await settle();
+  if(route==='menu'){e.$('bt-menu-open').emit('click');e.$('bt-menu-gate').emit('click');assert.equal(e.$('bt-menu').hidden,true);assert.equal(e.$('bt-cover').inert,false);}
+  if(route==='epilogue'){e.api.go(7);e.$('bt-close-gate').emit('click');}
+  if(route==='previous'){e.api.go(0);assert.equal(e.$('bt-prev').disabled,false);e.$('bt-prev').emit('click');}
+  e.flush();assert.equal(e.api.getState().gateMode,'closed');assert.equal(e.$('bt-cover').hidden,false);
+ }
+});

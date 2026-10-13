@@ -65,6 +65,17 @@ test('CSS fallback keeps following the stage dimensions after WebGL is denied',(
 test('base styles load first and no later inline stylesheet can restore the old layout',()=>{
  const index=fs.readFileSync(new URL('../public/index.html',import.meta.url),'utf8');
  const links=Array.from(index.matchAll(/<link[^>]+href="([^"]+\.css[^"]*)"/g),match=>match[1]);
- assert.deepEqual(links,['/base.css?v=2.1.0','/royal.css?v=2.1.0']);assert(!index.includes('<style'));
- assert(index.includes('class="bt-cover-copy"'));assert(index.includes('/palace.js?v=2.1.0'));
+ assert.deepEqual(links,['/base.css?v=2.2.0','/royal.css?v=2.2.0']);assert(!index.includes('<style'));
+ assert(index.includes('class="bt-cover-copy"'));assert(index.includes('/palace.js?v=2.2.0'));
+});
+
+
+test('back panels sample their own halves and brass accessories sit behind the wood',()=>{
+ const {math}=load();
+ for(const side of [-1,1]){
+  const mesh=math.leafMesh(side),u0=side<0?0:.5,u1=side<0?.5:1;
+  for(let index=48;index<96;index+=8){assert.equal(mesh.vertices[index+5],-1);assert(mesh.vertices[index+6]>=u0&&mesh.vertices[index+6]<=u1);}
+  const hardware=math.accessoryMesh(side);assert(hardware.vertices.length>1000);assert.equal(hardware.vertices.length%24,0);
+  for(let index=0;index<hardware.vertices.length;index+=8){assert(hardware.vertices[index+2]<-.105);assert(Number.isFinite(hardware.vertices[index]));}
+ }
 });

@@ -104,3 +104,21 @@ html,body{margin:0;background:#faf7f2}#bt-royal{max-width:none!important;margin:
 #bt-royal .bt-footer{padding:10px 12px}#bt-royal .bt-dot{padding:8px 3px;font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){#bt-royal .bt-stage-background{will-change:auto}}
+
+/* Always-accessible return controls and decorated CSS reverse faces. */
+#bt-royal .bt-header{position:fixed;top:0;left:0;right:0}
+#bt-royal .bt-brand{background:none;border:0;padding:0;pointer-events:auto;cursor:pointer}
+#bt-royal .bt-header-actions{align-items:center}
+#bt-royal .bt-home-button{display:inline-flex;align-items:center;gap:8px;min-height:43px;padding:10px 16px;border:1px solid #ad873f;border-radius:25px;background:#fffaf0ed;color:#6c4b20;box-shadow:0 2px 18px #8d713c0b;font:12px Georgia,serif;pointer-events:auto}
+#bt-royal .bt-home-button>span:first-child{font-size:21px;line-height:1}
+#bt-royal .bt-menu-gate{align-self:flex-start;margin:0 0 18px}
+#bt-royal .bt-cover-copy{transition:opacity .5s}
+#bt-royal.bt-closing .bt-cover-copy{opacity:0;pointer-events:none}
+#bt-royal.bt-closing .bt-door{transition-duration:2.1s}
+#bt-royal.bt-css-fallback.bt-closing .bt-stage-background{transition:transform 2.2s cubic-bezier(.3,.1,.2,1)}
+#bt-royal .bt-door{backface-visibility:hidden}
+#bt-royal .bt-door-back{position:absolute;inset:0;backface-visibility:hidden;transform:rotateY(180deg) translateZ(1px);background-image:url('/assets/door-back-v22.webp');background-size:200% 100%;border:1px solid #8f692f;box-shadow:inset 0 0 0 2px #4b301a}
+#bt-royal .bt-door.left .bt-door-back{background-position:left center}#bt-royal .bt-door.right .bt-door-back{background-position:right center}
+#bt-royal .bt-brass-ring{position:absolute;left:43%;top:48%;width:14%;aspect-ratio:1;border:3px solid #cba55f;border-radius:50%;background:transparent;box-shadow:0 2px 2px #160b09aa,inset 0 0 0 1px #f6df9c;transform:translateZ(3px)}
+#bt-royal button:focus-visible,#bt-royal a:focus-visible{outline:2px solid #9b762e;outline-offset:4px}
+@media(max-width:560px){#bt-royal .bt-header-actions{gap:6px}#bt-royal .bt-home-button{padding:8px 10px;font-size:11px;gap:5px;min-height:40px}#bt-royal .bt-brand{font-size:26px}}
